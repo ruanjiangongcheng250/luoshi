@@ -2,7 +2,12 @@ import React, {useState, useEffect} from 'react'
 import { Carousel } from 'antd';
 import './Page.css';
 import 'antd/dist/antd.css';
-import logo from './../../image/logo.jpg'
+import logo from './../../image/logo.png'
+import footerLogo from './../../image/dibu_logo.png'
+import Home from '../home/Index';
+import About from '../about/Index';
+import Juzhen from '../juzhen/Index';
+import JoinUs from '../JoinUs/Index';
 
 
 const menuData = [
@@ -33,7 +38,7 @@ const menuData = [
 ]
 
 
-function App() {
+function Page() {
   const [active, setActive] = useState(0)
   useEffect(()=>{
     console.log('active', active)
@@ -53,23 +58,17 @@ function App() {
   const renderContent = ()=> {
     switch(active) {
       case 0:
-        return <p>首页内容组件</p>
-        break;
+        return <Home/>
       case 1:
-        return <p>关于珞石组件</p>
-        break;
+        return <About/>
         case 2:
-          return <p>资源矩阵组件</p>
-        break;
+          return <Juzhen/>
       case 3:
         return <p>成功案例组件</p>
-        break;
         case 4:
-          return <p>加入我们组件</p>
-        break;
+          return <JoinUs/>
       case 5:
         return <p>联系我们组件</p>
-        break;
       default:
         return <p>首页内容组件</p>
 
@@ -109,8 +108,8 @@ function App() {
       <div className="footer">
         <div className="footer_left">
           <div className="logo">
-            <img src="" />
-            <div>传播美好事物</div>
+            <img src={footerLogo} />
+            <div style={{fontSize: '28px'}}>传播美好事物</div>
           </div>
           <div className="desc">
           珞石文化是一家以独家网红资源优势起家，擅长社会化营销策划的文化传播公司。
@@ -121,7 +120,7 @@ function App() {
         </div>
         <div className="footer_center">
             {menuData.slice(1).map((item)=>{
-              return <div onClick={()=>{setActive(item.id)}} key={item.id} className="item">{item.name}</div>
+              return <div onClick={()=>{setActive(item.id); document.documentElement.scrollTop = 0;}} key={item.id} className="item">{item.name}</div>
             })}
         </div>
         <div className="footer_right">
@@ -137,4 +136,4 @@ function App() {
   );
 }
 
-export default App;
+export default Page;

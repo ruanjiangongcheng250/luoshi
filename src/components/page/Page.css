@@ -48,6 +48,12 @@
   align-items:  center;
 }
 
+.footer_left .logo img {
+  width: 193px;
+  height: 79px;
+  margin-right: 73px;
+}
+
 .footer_left .desc {
   width: 643px;
   margin-top: 77px;
@@ -55,20 +61,43 @@
 }
 
 .footer_center {
-  width: 103px;
+  position: relative;
+}
+
+.footer_center::before, .footer_right::before {
+  content: '';
+  width: 1px;
+  height: 160px;
+  position: absolute;
+  top: 115px;
+  left: -90px;
+  background-color: #979797;
 }
 
 .footer_center .item {
+  font-size: 26px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 23px;
+	letter-spacing: 0px;
+	color: #ffffff;
   margin-bottom: 53px;
   cursor: pointer;
 }
 
 .footer_right {
-  width: 335px;
+  height: 380px;
   font-size: 16px;
+  position: relative;
 }
 
 .footer_right .label {
+  font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 23px;
+	letter-spacing: 2px;
+	color: #ffffff;
   margin-bottom: 43px;
 }
 

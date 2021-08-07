@@ -1,0 +1,80 @@
+.about_this {
+    width: 1920px;
+    height: 100%;
+}
+
+.about_top {
+    width: calc(100% - 320px);
+    margin: 136px 160px;
+}
+
+.about_bottom {
+    width: 1920px;
+    height: 800px;
+    background: url('../../image/yewu_bg.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_bottomTitle {
+    font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 23px;
+	letter-spacing: 4px;
+    color: #252525;
+    position: relative;
+}
+
+.about_bottomTitle::after {
+    content: '';
+    width: 100px;
+	height: 6px;
+	background-color: #28465e;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -33px;
+    left: 66px;
+}
+
+.about_bottomBox {
+    width: calc(100% - 720px);
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 360px 0 360px;
+}
+
+.about_bottomInfo {
+    width: 256px;
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_bottomInfo img {
+    width: 147px;
+    height: 168px;
+}
+
+.about_bottomKey {
+    font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 28px;
+	letter-spacing: 0px;
+    color: #333333;
+    margin-top: 30px;
+}
+
+.about_bottomValue {
+    font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 28px;
+	letter-spacing: 0px;
+    color: #333333;
+    margin-top: 16px;
+}
