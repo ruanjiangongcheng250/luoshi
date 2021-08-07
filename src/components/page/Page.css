@@ -1,0 +1,82 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 170px;
+  width: 1920px;
+  color: #28465e;
+  background-color: #f1f1f1;
+}
+
+.header .menu .logo {
+  width: 222px;
+  height: 91px;
+}
+
+.header .menu .item {
+  cursor: pointer;
+}
+
+.header .menu .active {
+  font-weight: bold;
+}
+
+.header .swiper {
+  width: 1920px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1920px;
+	height: 700px;
+  background-color: #172836;
+  color: #d7d7d7;
+  padding: 0 211px;
+  box-sizing: border-box;
+}
+
+.footer_left .logo {
+  display: flex;
+  align-items:  center;
+}
+
+.footer_left .desc {
+  width: 643px;
+  margin-top: 77px;
+  color: #d7d7d7;
+}
+
+.footer_center {
+  width: 103px;
+}
+
+.footer_center .item {
+  margin-bottom: 53px;
+  cursor: pointer;
+}
+
+.footer_right {
+  width: 335px;
+  font-size: 16px;
+}
+
+.footer_right .label {
+  margin-bottom: 43px;
+}
+
+.footer_right .phone {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+
+
+
